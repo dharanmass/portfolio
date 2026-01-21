@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
+import resume from '../assets/resume.pdf';
 
 const Hero = () => {
     return (
@@ -114,7 +115,7 @@ const Hero = () => {
                         </a>
 
                         <a
-                            href="/resume.pdf"
+                            href={resume}
                             download="Dharanidharan_Resume.pdf"
                             className="px-8 py-4 rounded-full border border-slate-700 hover:border-accent hover:text-accent transition-colors duration-300 flex items-center gap-2"
                         >

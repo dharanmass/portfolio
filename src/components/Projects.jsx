@@ -4,6 +4,8 @@ import carRentalImg from '../assets/car-rental-project.png';
 import dashboardImg from '../assets/dashboard.png';
 import phishingImg from '../assets/AI.jpg';
 
+import aiRagImg from '../assets/ai_rag_system.png';
+
 const projects = [
     {
         title: 'CAR RENTAL COMPARISON APP',
@@ -25,6 +27,13 @@ const projects = [
         tags: ['AI/ML', 'Cybersecurity', 'Browser Extension', 'Python'],
         links: { demo: 'https://www.behance.net/gallery/236610197/AI-Powered-Real-Time-Phishing-Detection', github: '#' },
         image: phishingImg
+    },
+    {
+        title: 'AI Chat RAG System Enterprise Document Intelligence',
+        description: 'An AI-powered RAG system for enterprise document intelligence, featuring a document ingestion pipeline, vector knowledge base, and LLM integration.',
+        tags: ['AI/ML', 'RAG', 'Python', 'Pinecone', 'Gemini'],
+        links: { demo: '#', github: 'https://github.com/dharanmass/AI-Chat-RAG-System-Enterprise-Document-Intelligence' },
+        image: aiRagImg
     }
 ];
 
@@ -88,7 +97,7 @@ const Projects = () => {
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projects.map((project, index) => (
                         <ProjectCard key={index} project={project} index={index} />
                     ))}
